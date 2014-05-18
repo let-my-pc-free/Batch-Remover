@@ -2,6 +2,7 @@
   <unwanted-service>
     <full-service-name></full-service-name>
     <company></company>
+    <Executable-file-name></Executable-file-name>
   </unwanted-service>
 
 </unwanted-services-list>
