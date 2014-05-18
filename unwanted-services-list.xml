@@ -3,6 +3,7 @@
     <full-service-name></full-service-name>
     <company></company>
     <Executable-file-name></Executable-file-name>
+    <part-of></part-of>
   </unwanted-service>
 
 </unwanted-services-list>
