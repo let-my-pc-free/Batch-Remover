@@ -8,10 +8,10 @@
   </unwanted-Run_Value>
 
   <unwanted-Run_Value>
-    <full-Run_Value-name>AdobeFlashPlayerUpdateSvc</full-Run_Value-name>
+    <full-Run_Value-name>Adobe ARM</full-Run_Value-name>
     <company>Adobe</company>
-    <Executable-file-name></Executable-file-name>
-    <part-of>Adobe Flash Player</part-of>
+    <Executable-file-name>AdobeARM.exe</Executable-file-name>
+    <part-of>Adobe Reader and Acrobat Manager</part-of>
   </unwanted-Run_Value>
 
 </unwanted-Run_Registry-list>
