@@ -1,14 +1,14 @@
 <unwanted-Run_Registry-list>
   
   <unwanted-Run_Value>
-    <full-service-name></full-service-name>
+    <full-Run_Value-name></full-Run_Value-name>
     <company></company>
     <Executable-file-name></Executable-file-name>
     <part-of></part-of>
   </unwanted-Run_Value>
 
   <unwanted-Run_Value>
-    <full-service-name>AdobeFlashPlayerUpdateSvc</full-service-name>
+    <full-Run_Value-name>AdobeFlashPlayerUpdateSvc</full-Run_Value-name>
     <company>Adobe</company>
     <Executable-file-name></Executable-file-name>
     <part-of>Adobe Flash Player</part-of>
