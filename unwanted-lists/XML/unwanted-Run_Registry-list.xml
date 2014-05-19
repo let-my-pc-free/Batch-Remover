@@ -22,4 +22,11 @@
     <part-of>Adobe Reader and Acrobat Manager</part-of>
   </unwanted-Run_Value>
 
+  <unwanted-Run_Value>
+    <full-Run_Value-name>AdobeCS6ServiceManager</full-Run_Value-name>
+    <company>Adobe</company>
+    <Executable-file-name>cs6servicemanager.exe</Executable-file-name>
+    <part-of>Adobe CS6 Service Manager</part-of>
+  </unwanted-Run_Value>
+
 </unwanted-Run_Registry-list>
