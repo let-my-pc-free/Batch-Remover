@@ -14,4 +14,11 @@
     <part-of>Adobe Flash Player</part-of>
   </unwanted-service>
 
+  <unwanted-service>
+    <full-service-name>AdobeARMservice</full-service-name>
+    <company>Adobe</company>
+    <Executable-file-name></Executable-file-name>
+    <part-of>Adobe Reader and Acrobat Manager</part-of>
+  </unwanted-service>
+
 </unwanted-services-list>
