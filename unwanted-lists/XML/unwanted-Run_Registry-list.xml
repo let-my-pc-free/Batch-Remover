@@ -9,6 +9,13 @@
   </unwanted-Run_Value>
 
   <unwanted-Run_Value>
+    <full-Run_Value-name>AdobeAAMUpdater-1.0</full-Run_Value-name>
+    <company>Adobe</company>
+    <Executable-file-name>UpdaterStartupUtility.exe</Executable-file-name>
+    <part-of>Adobe Application Manager</part-of>
+  </unwanted-Run_Value>
+
+  <unwanted-Run_Value>
     <full-Run_Value-name>Adobe ARM</full-Run_Value-name>
     <company>Adobe</company>
     <Executable-file-name>AdobeARM.exe</Executable-file-name>
