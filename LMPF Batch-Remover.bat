@@ -4,13 +4,13 @@
 pushd %~dp0
 
 :: for each line in unwanted-services.txt, stop and delete the service name.
-FOR /F "delims=;" %%s IN (unwanted-lists\unwanted-services.txt) DO (
+FOR /F "delims=;" %%s IN (unwanted-lists\unwanted-services-list.txt) DO (
 sc stop %%s
 sc delete %%s
 )
 
 :: for each line in unwanted-Run_Registry.txt, delete the value from run key on registry.
-FOR /F "delims=;" %%r IN (unwanted-lists\unwanted-Run_Registry.txt) DO (
+FOR /F "delims=;" %%r IN (unwanted-lists\unwanted-Run_Registry-list.txt) DO (
 reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v %%r /f
 )
 
