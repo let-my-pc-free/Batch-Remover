@@ -6,17 +6,18 @@ pushd %~dp0
 :: warn the user Abut the Risk creating and using "Ask.vbs" file.
 :: the Script showing MsgBox if user click "Ok" then the script returning EXIT CODE 0,
 :: And if user click "Cancel" then the script returning EXIT CODE 1 and then the Batch EXIT.
-echo msgboxResult = MsgBox ("Warning: Although the software is rigorously tested, in rare cases it may damage your computer. Continue?", vbOKCancel+vbQuestion+vbDefaultButton2+vbSystemModal, "Warning") > ask.vbs
-echo if msgboxResult = vbOK then >> ask.vbs
-echo WScript.Quit(0) >> ask.vbs
-echo elseif msgboxResult = vbCancel then >> ask.vbs
-echo WScript.Quit(1) >> ask.vbs
-echo end if >> ask.vbs
+set vbsFilePath=%temp%\ask.vbs
+echo msgboxResult = MsgBox ("Warning: Although the software is rigorously tested, in rare cases it may damage your computer. Continue?", vbOKCancel+vbQuestion+vbDefaultButton2+vbSystemModal, "Warning") > %vbsFilePath%
+echo if msgboxResult = vbOK then >> %vbsFilePath%
+echo WScript.Quit(0) >> %vbsFilePath%
+echo elseif msgboxResult = vbCancel then >> %vbsFilePath%
+echo WScript.Quit(1) >> %vbsFilePath%
+echo end if >> %vbsFilePath%
 
-ask.vbs
+%vbsFilePath%
 
 if errorlevel 1 (
-del ask.vbs /q
+del %vbsFilePath% /q
 exit
 )
 
