@@ -20,6 +20,8 @@ if errorlevel 1 (
 del %vbsFilePath% /q
 exit
 )
+:: delete "ask.vbs"
+del %vbsFilePath% /q
 
 :: for each line in unwanted-services-list.txt, stop and delete the service name.
 FOR /F "delims=;" %%s IN (unwanted-lists\unwanted-services-list.txt) DO (
