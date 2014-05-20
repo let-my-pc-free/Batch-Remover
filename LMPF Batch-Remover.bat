@@ -6,22 +6,23 @@ pushd %~dp0
 :: warn the user Abut the Risk creating and using "Ask.vbs" file.
 :: the Script showing MsgBox if user click "Ok" then the script returning EXIT CODE 0,
 :: And if user click "Cancel" then the script returning EXIT CODE 1 and then the Batch EXIT.
-set vbsFilePath=%temp%\ask.vbs
-echo msgboxResult = MsgBox ("Warning: Although the software is rigorously tested, in rare cases it may damage your computer. Continue?", vbOKCancel+vbQuestion+vbDefaultButton2+vbSystemModal, "Warning") > %vbsFilePath%
-echo if msgboxResult = vbOK then >> %vbsFilePath%
-echo WScript.Quit(0) >> %vbsFilePath%
-echo elseif msgboxResult = vbCancel then >> %vbsFilePath%
-echo WScript.Quit(1) >> %vbsFilePath%
-echo end if >> %vbsFilePath%
+set vbsWarnPath=%temp%\Warn.vbs
+echo msgboxResult = MsgBox ("Warning: Although the software is rigorously tested, in rare cases it may damage your computer. Continue?", vbOKCancel+vbQuestion+vbDefaultButton2+vbSystemModal, "Warning") > %vbsWarnPath%
+echo if msgboxResult = vbOK then >> %vbsWarnPath%
+echo WScript.Quit(0) >> %vbsWarnPath%
+echo elseif msgboxResult = vbCancel then >> %vbsWarnPath%
+echo WScript.Quit(1) >> %vbsWarnPath%
+echo end if >> %vbsWarnPath%
 
+:: run the script (Warn.vbs)
 %vbsFilePath%
 
 if errorlevel 1 (
-del %vbsFilePath% /q
+del %vbsWarnPath% /q
 exit
 )
-:: delete "ask.vbs"
-del %vbsFilePath% /q
+:: delete "Warn.vbs"
+del %vbsWarnPath% /q
 
 :: for each line in unwanted-services-list.txt, stop and delete the service name.
 FOR /F "delims=;" %%s IN (unwanted-lists\unwanted-services-list.txt) DO (
