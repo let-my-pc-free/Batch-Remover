@@ -15,7 +15,7 @@ echo WScript.Quit(1) >> %vbsWarnPath%
 echo end if >> %vbsWarnPath%
 
 :: run the script (Warn.vbs)
-%vbsFilePath%
+%vbsWarnPath%
 
 if errorlevel 1 (
 del %vbsWarnPath% /q
