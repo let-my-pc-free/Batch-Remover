@@ -1,4 +1,2 @@
 "Adobe ARM";
 "AdobeAAMUpdater-1.0";
-AdobeCS6ServiceManager;
-SwitchBoard;
