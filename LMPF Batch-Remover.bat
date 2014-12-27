@@ -1,6 +1,6 @@
 :: this script deleting unwanted services, run values on registry and Scheduled Task Using lists as string in "unwanted-lists" diractory.
 
-:: make the current directory wher the batch and the lists
+:: make the current directory where the batch and the lists
 pushd %~dp0
 
 :: warn the user Abut the Risk creating and using "Ask.vbs" file.
