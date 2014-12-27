@@ -3,7 +3,7 @@
 :: make the current directory where the batch and the lists
 pushd %~dp0
 
-:: warn the user About the Risk creating and using "Ask.vbs" file.
+:: warn the user About the Risk creating and using "Warn.vbs" file.
 :: the Script showing MsgBox if user click "Ok" then the script returning EXIT CODE 0,
 :: And if user click "Cancel" then the script returning EXIT CODE 1 and then the Batch EXIT.
 set vbsWarnPath=%temp%\Warn.vbs
